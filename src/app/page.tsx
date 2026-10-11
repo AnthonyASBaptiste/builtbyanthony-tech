@@ -128,6 +128,7 @@ export default function Home() {
 
         {/* Filter Controls & Search */}
         <section id="builds" className="space-y-8 scroll-mt-24">
+          <div id="experiments" className="scroll-mt-24 pointer-events-none"></div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#1e293b] pb-6">
             <div>
               <div className="text-xs font-mono-code text-[#00f0ff] tracking-widest uppercase mb-1 flex items-center gap-2">

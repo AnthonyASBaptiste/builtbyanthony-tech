@@ -52,7 +52,7 @@ export default function Navbar() {
         </Link>
 
         {/* Nav Links */}
-        <nav className="hidden md:flex items-center gap-6 font-mono-code text-xs text-slate-300">
+        <nav aria-label="Desktop Navigation" className="hidden md:flex items-center gap-6 font-mono-code text-xs text-slate-300">
           <Link href="/#builds" className="hover:text-[#00f0ff] transition-colors flex items-center gap-1.5">
             <Cpu className="w-3.5 h-3.5 text-[#00f0ff]" /> All Builds
           </Link>
@@ -80,16 +80,16 @@ export default function Navbar() {
 
       {/* Mobile Nav Links */}
       <nav
-        aria-label="Primary"
+        aria-label="Mobile Navigation"
         className="md:hidden border-t border-[#1e293b]/60 px-6 py-2 flex items-center gap-5 overflow-x-auto font-mono-code text-xs text-slate-300"
       >
-        <Link href="/#builds" className="hover:text-[#00f0ff] transition-colors flex items-center gap-1.5 whitespace-nowrap py-1">
+        <Link href="/#builds" className="hover:text-[#00f0ff] transition-colors flex items-center gap-1.5 whitespace-nowrap py-2">
           <Cpu className="w-3.5 h-3.5 text-[#00f0ff]" /> All Builds
         </Link>
-        <Link href="/hackathons" className="hover:text-[#00f0ff] transition-colors flex items-center gap-1.5 whitespace-nowrap py-1">
+        <Link href="/hackathons" className="hover:text-[#00f0ff] transition-colors flex items-center gap-1.5 whitespace-nowrap py-2">
           <Trophy className="w-3.5 h-3.5 text-[#f59e0b]" /> Hackathons
         </Link>
-        <Link href="/#experiments" className="hover:text-[#00f0ff] transition-colors flex items-center gap-1.5 whitespace-nowrap py-1">
+        <Link href="/#experiments" className="hover:text-[#00f0ff] transition-colors flex items-center gap-1.5 whitespace-nowrap py-2">
           <Flame className="w-3.5 h-3.5 text-[#10b981]" /> Experiments
         </Link>
       </nav>
