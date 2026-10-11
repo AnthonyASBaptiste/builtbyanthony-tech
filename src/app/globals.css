@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --bg-obsidian: #07090e;
+  --bg-slate-panel: #0e131f;
+  --border-blueprint: #1e293b;
+  --border-active: #334155;
+  --signal-cyan: #00f0ff;
+  --signal-gold: #f59e0b;
+  --signal-green: #10b981;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+body {
+  background-color: var(--bg-obsidian);
+  color: var(--text-main);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.font-mono-code {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+/* Blueprint Grid Pattern */
+.bg-blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(30, 41, 59, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 41, 59, 0.35) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Lab Hex Pattern */
+.bg-lab-dots {
+  background-image: radial-gradient(rgba(0, 240, 255, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-blueprint);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--signal-cyan);
+}
