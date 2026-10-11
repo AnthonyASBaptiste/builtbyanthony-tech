@@ -77,7 +77,7 @@ export default function Home() {
                 <span className="text-[11px] text-slate-400 uppercase block">Hackathon MVPs</span>
                 <span className="text-xl font-bold text-[#f59e0b] font-display">{hackathonCount} Sprints</span>
               </div>
-              <div className="p-3 bg-[#07090e]/80 rounded-xl border border-[#1e293b]">
+              <div className="col-span-2 sm:col-span-1 p-3 bg-[#07090e]/80 rounded-xl border border-[#1e293b]">
                 <span className="text-[11px] text-slate-400 uppercase block">Inference</span>
                 <span className="text-xl font-bold text-[#00f0ff] font-display">Sovereign / Open</span>
               </div>
