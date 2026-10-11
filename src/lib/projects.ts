@@ -79,7 +79,6 @@ export const projectsCatalog: Project[] = [
     featured: true,
     starred: true,
     metrics: 'Mom Test Guardrails • Sovereign Cascade Routing',
-    githubUrl: 'https://github.com/AnthonyASBaptiste/vali',
     buildLog: {
       overview: 'Created as the standalone interview & discovery engine of Research Navigator, providing founders with an objective auditor for customer discovery.',
       architectureNotes: [
@@ -107,7 +106,6 @@ export const projectsCatalog: Project[] = [
     featured: true,
     starred: true,
     metrics: 'Kernel Landlock Isolation • Automatic Health Recovery',
-    githubUrl: 'https://github.com/AnthonyASBaptiste/nemoclaw-agent-watchdog',
     buildLog: {
       overview: 'Engineered to manage persistent autonomous agent fleets on Fedora Linux without giving LLMs unchecked access to the host machine.',
       architectureNotes: [
