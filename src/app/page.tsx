@@ -50,19 +50,19 @@ export default function Home() {
         
         {/* Builder Hero Section */}
         <section className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-b from-[#0e131f] to-[#07090e] border border-[#1e293b] overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#00f0ff]/10 via-[#f59e0b]/5 to-transparent pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-[32rem] h-[32rem] bg-[radial-gradient(circle_at_top_right,rgba(0,240,255,0.10),rgba(245,158,11,0.04)_40%,transparent_70%)] pointer-events-none"></div>
 
-          <div className="max-w-3xl space-y-6">
+          <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-[#00f0ff] font-mono-code text-xs font-bold">
               <Sparkles className="w-3.5 h-3.5" />
               <span>PROJECT LABORATORY & BUILD REGISTRY</span>
             </div>
 
-            <h1 className="text-4xl sm:text-6xl font-display font-extrabold text-white tracking-tight leading-none">
+            <h1 className="max-w-3xl text-4xl sm:text-6xl font-display font-extrabold text-white tracking-tight leading-none">
               Things I’ve built, broken, shipped & learned from.
             </h1>
 
-            <p className="text-slate-300 text-base sm:text-lg font-sans leading-relaxed">
+            <p className="max-w-3xl text-slate-300 text-base sm:text-lg font-sans leading-relaxed">
               Welcome to <strong>Built by Anthony</strong>. This is my builder workshop: an open registry of autonomous 
               AI agents, hackathon builds, production pipelines, and experimental systems built with open-weight models, Go, Python, and TypeScript.
             </p>
@@ -70,20 +70,20 @@ export default function Home() {
             {/* Quick Metrics HUD */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-[#1e293b] font-mono-code">
               <div className="p-3 bg-[#07090e]/80 rounded-xl border border-[#1e293b]">
-                <span className="text-[10px] text-slate-500 uppercase block">Total Builds</span>
+                <span className="text-[11px] text-slate-400 uppercase block">Total Builds</span>
                 <span className="text-xl font-bold text-white font-display">{projectsCatalog.length} Systems</span>
               </div>
               <div className="p-3 bg-[#07090e]/80 rounded-xl border border-[#1e293b]">
-                <span className="text-[10px] text-slate-500 uppercase block">Hackathon MVPs</span>
+                <span className="text-[11px] text-slate-400 uppercase block">Hackathon MVPs</span>
                 <span className="text-xl font-bold text-[#f59e0b] font-display">{hackathonCount} Sprints</span>
               </div>
-              <div className="p-3 bg-[#07090e]/80 rounded-xl border border-[#1e293b]">
-                <span className="text-[10px] text-slate-500 uppercase block">Inference</span>
+              <div className="col-span-2 sm:col-span-1 p-3 bg-[#07090e]/80 rounded-xl border border-[#1e293b]">
+                <span className="text-[11px] text-slate-400 uppercase block">Inference</span>
                 <span className="text-xl font-bold text-[#00f0ff] font-display">Sovereign / Open</span>
               </div>
-              <div className="p-3 bg-[#07090e]/80 rounded-xl border border-[#1e293b]">
-                <span className="text-[10px] text-slate-500 uppercase block">Domain</span>
-                <span className="text-xl font-bold text-emerald-400 font-display">builtbyanthony.tech</span>
+              <div className="col-span-2 sm:col-span-1 p-3 bg-[#07090e]/80 rounded-xl border border-[#1e293b] min-w-0">
+                <span className="text-[11px] text-slate-400 uppercase block">Domain</span>
+                <span className="text-xl font-bold text-emerald-400 font-display break-words">builtbyanthony.tech</span>
               </div>
             </div>
 
@@ -128,6 +128,7 @@ export default function Home() {
 
         {/* Filter Controls & Search */}
         <section id="builds" className="space-y-8 scroll-mt-24">
+          <div id="experiments" className="scroll-mt-24 pointer-events-none"></div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#1e293b] pb-6">
             <div>
               <div className="text-xs font-mono-code text-[#00f0ff] tracking-widest uppercase mb-1 flex items-center gap-2">

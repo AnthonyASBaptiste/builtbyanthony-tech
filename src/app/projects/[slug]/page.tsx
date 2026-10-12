@@ -63,7 +63,7 @@ export default async function ProjectDetailPage({
 
         {/* Project Header Block */}
         <header className="p-8 bg-[#0e131f] border border-[#1e293b] rounded-3xl space-y-6 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#00f0ff]/10 to-transparent pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-[26rem] h-[26rem] bg-[radial-gradient(circle_at_top_right,rgba(0,240,255,0.10),transparent_70%)] pointer-events-none"></div>
 
           <div className="flex flex-wrap items-center justify-between gap-3">
             <span className="text-xs font-mono-code text-[#00f0ff] uppercase tracking-widest flex items-center gap-2">
