@@ -31,6 +31,45 @@ export interface Project {
 
 export const projectsCatalog: Project[] = [
   {
+    slug: 'tenderlens',
+    id: '00',
+    title: 'TenderLens T&T',
+    subtitle: 'WhatsApp & Gemma 2 autonomous tender readiness & proactive bid assistant',
+    category: 'HACKATHONS',
+    categoryLabel: 'DEV Hacktoberfest 2026',
+    description:
+      'An open-source AI tender readiness assistant that turns WhatsApp photos of newspaper ads into living bid plans. Extracts mandatory statutory clauses (BIR, NIS, VAT) with exact page citations, auto-drafts package requests for Oracle ERP portals, and triggers proactive follow-through check-ins via Temporal durable workflows.',
+    tech: ['Gemma 2', 'Temporal Cloud', 'Render', 'FastAPI', 'PostgreSQL', 'WhatsApp Cloud API', 'Python 3.13'],
+    status: 'FLAGSHIP SYSTEM',
+    featured: true,
+    starred: true,
+    metrics: '20 Automated Tests • Durable Temporal Workflows • WhatsApp Native',
+    demoUrl: 'https://tenderlens.builtbyanthony.tech',
+    githubUrl: 'https://github.com/AnthonyASBaptiste/tenderlens',
+    hackathon: {
+      name: 'Hacktoberfest Open-Source AI Challenge: Week 2 (Side Hustle)',
+      eventDate: 'October 2026',
+      theme: 'Build something with open-weight models or open-source AI that someone would actually pay for.',
+      outcome: 'Shipped Live Web Simulator & Render Multi-Service Blueprint.',
+      prompt: 'Build something with open-source AI at its core that solves a real problem for a real person or viable side hustle.',
+      submissionUrl: 'https://dev.to/it0nyb/tenderlens-turning-whatsapp-gemma-2-into-an-autonomous-bid-assistant-for-contractors-355b-temp-slug-1155480',
+    },
+    buildLog: {
+      overview: 'Over 60% of bids from small Caribbean contractors get disqualified before technical evaluation due to administrative bureaucracy and 5-10 day statutory bottlenecks. TenderLens turns the newspaper notice into the true entry point, keeping the interface right inside WhatsApp.',
+      architectureNotes: [
+        'Open-weight Gemma 2 inference for dense procurement clause reasoning and multilingual Caribbean English nuance.',
+        'Temporal durable workflows (TenderFollowThroughWorkflow) maintaining multi-week timer loops that survive server restarts.',
+        'Render multi-service Blueprint deploying FastAPI Web Gateway, Temporal Worker with TLS/API key auth, and PostgreSQL database with automatic timestamptz migration.',
+        'HMAC-SHA256 signed magic upload tokens (1-hr TTL) for secure drag-and-drop intake of multi-file packages >100MB.',
+      ],
+      lessonsLearned: [
+        'Caribbean contractors do not want another portal or mobile app to log into; WhatsApp is the interface.',
+        'Message concurrency from mobile bursts must be debounced and ordered via Temporal signals rather than direct raw webhook processing.',
+        'Statutory lead-time warnings (e.g. BIR tax clearance 5-10 days) must be surfaced immediately at RFP intake, not in the final submission week.',
+      ],
+    },
+  },
+  {
     slug: 'briefly',
     id: '01',
     title: 'Briefly',
