@@ -40,9 +40,8 @@ export const projectsCatalog: Project[] = [
     description:
       'An open-source AI tender readiness assistant that turns WhatsApp photos of newspaper ads into living bid plans. Extracts mandatory statutory clauses (BIR, NIS, VAT) with exact page citations, auto-drafts package requests for Oracle ERP portals, and triggers proactive follow-through check-ins via Temporal durable workflows.',
     tech: ['Gemma 2', 'Temporal Cloud', 'Render', 'FastAPI', 'PostgreSQL', 'WhatsApp Cloud API', 'Python 3.13'],
-    status: 'FLAGSHIP SYSTEM',
+    status: 'SUBMITTED',
     featured: true,
-    starred: true,
     metrics: '20 Automated Tests • Durable Temporal Workflows • WhatsApp Native',
     demoUrl: 'https://tenderlens.builtbyanthony.tech',
     githubUrl: 'https://github.com/AnthonyASBaptiste/tenderlens',
